@@ -69,9 +69,6 @@ jobs:
       - name: Build package
         run: |
           cd odh-jupyter-trash-cleanup
-          pip install . 
-          jlpm install
-          jlpm build:prod
           python -m pip install --upgrade build
           python -m build
       - name: Publish package on PyPI
